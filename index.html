@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>MyOwnTextEditor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/><!--ссилка на файл із CSS стилями-->
+  </head>
+  <body>
+    <div class = "panel1"><!--блок, де містятся кнопки, які стилізують текст-->
+      <input class = "btn edit" type="button"  value="EDIT"><!--кнопка, яка викликає блок, де містяться додаткові елементи (таблиці, списки і т.д.)-->
+      <input class = "btn bold" type="button"  value="B"><!--кнопка, яка надає тексту об"єму-->
+      <input class = "cursive btn" type="button"  value="I"><!--кнопа, яка надає тексту курсиву-->
+      <button class = "btn underline" type="button" value = ""><ins>U</ins></button><!--кнопка, яка підкреслює текст-->
+        <select name='text-size' class = "btn text-size"><!--форма вибору розміру тексту-->
+          <option value = "" selected>Виберіть розмір</option>
+          <option value = "12pt">12pt</option>
+          <option value = "14pt">14pt</option>
+          <option value = "16pt">16pt</option>
+          <option value = "18pt">18pt</option>
+          <option value = "20pt">20pt</option>
+        </select>
+        <select  name='list' class = "btn text-style1"><!--форма вибору стилю тексту (деякі слабо розпізнаються - тому потрібно при збільшеному тексту уважно роздивлятися-->
+        <option selected value = "Courier">Courier</option>
+          <option value = "Charcoal">Charcoal</option>
+          <option value = "Verdana">Verdana</option>
+          <option value = "Arial">Arial</option>
+          <option value = "Times New Roman">Times New Roman</option>
+          <option value = "Arial Black">Arial Black</option>
+          <option value = "Trebuchet MS">Trebuchet MS</option>
+          <option value = "Gadget">Gadget</option>
+          <option value = "Helvetica">Helvetica</option>
+        </select>
+        <input class = "btn color-text" type="button"  value="Color"><!--кнопка, яка викликає блок із кольорами для тексту-->
+        <input class = "btn background" type="button"  value="Background"><!--кнопка для виклику фонів-->
+        <label><input class = "left" id="r1" name="r" type='radio' value="left"/>left</label><!--кнопка направлення тексту вліво-->
+        <label><input class = "center" id="r2" name="r" type='radio'  value="Center"/>Center</label><!--кнопка направлення тексту в центр-->
+        <label><input class = "right" id="r3" name="r" type='radio'  value="Right"/>Right</label><!--кнопка направлення тексту в право-->
+    </div>
+    <div class = "panel2"><!--панель з інструментами невидимого блоку, який викликається кнопкою EDIT-->
+      <button class = "btn save" type="button">SAVE</button>  <!--кнопка для збереження змін та віжображення їх у головному блоці-->
+       <button class = "btn create-table" type="button">CREATE TABLE</button><!--кнопка створення таблиці-->
+        <button class = "btn create-list" type="button">CREATE LIST</button><!--кнопка створення списку-->
+    </div>
+    <div class="main-window"><!--головний блок з сукупністю видимих елементів-->
+     <div class="main-window1"><!--блок, де відображається текст-->
+       <p>HSBC, від Hongkong & Shanghai Banking Corporation Holdings plc — британський банк, найбільший банк Європи, одна з найбільших фінансових груп у світі. Утворений в 1991 році Hongkong and Shanghai Banking Corporation, що мав штаб-квартири на Далекому Сході, пізніше став засновником є дочірньою структурою Група HSBC. Після утворення банківської групи штаб квартира переїхала у Лондон. 
+       Процес утворення почався після придбання англійського банка Midland. Назва взята з початкових літер банка засновника. Також варто відмітити що домашнім ринком, група рахує як Великобританію так і Гонконг. HSBC налічує близько 7200 офісів у 82 країнах світу. Компанія надає повний комплекс банківських послуг: міжнародний банкінг та фінансові послуги, включаючи роздрібний та корпоративний банкінг, торгівлю цінними паперами, робота на ринках капіталу, інвестиційний банкінг та страхування.
+       HSBC, від Hongkong & Shanghai Banking Corporation Holdings plc — британський банк, найбільший банк Європи, одна з найбільших фінансових груп у світі. Утворений в 1991 році Hongkong and Shanghai Banking Corporation, що мав штаб-квартири на Далекому Сході, пізніше став засновником є дочірньою структурою Група HSBC. Після утворення банківської групи штаб квартира переїхала у Лондон. 
+       Процес утворення почався після придбання англійського банка Midland. Назва взята з початкових літер банка засновника. Також варто відмітити що домашнім ринком, група рахує як Великобританію так і Гонконг. HSBC налічує близько 7200 офісів у 82 країнах світу. Компанія надає повний комплекс банківських послуг: міжнародний банкінг та фінансові послуги, включаючи роздрібний та корпоративний банкінг, торгівлю цінними паперами, робота на ринках капіталу, інвестиційний банкінг та страхування.
+       HSBC, від Hongkong & Shanghai Banking Corporation Holdings plc — британський банк, найбільший банк Європи, одна з найбільших фінансових груп у світі. Утворений в 1991 році Hongkong and Shanghai Banking Corporation, що мав штаб-квартири на Далекому Сході, пізніше став засновником є дочірньою структурою Група HSBC. Після утворення банківської групи штаб квартира переїхала у Лондон. 
+       Процес утворення почався після придбання англійського банка Midland. Назва взята з початкових літер банка засновника. Також варто відмітити що домашнім ринком, група рахує як Великобританію так і Гонконг. HSBC налічує близько 7200 офісів у 82 країнах світу. Компанія надає повний комплекс банківських послуг: міжнародний банкінг та фінансові послуги, включаючи роздрібний та корпоративний банкінг, торгівлю цінними паперами, робота на ринках капіталу, інвестиційний банкінг та страхування.
+       HSBC, від Hongkong & Shanghai Banking Corporation Holdings plc — британський банк, найбільший банк Європи, одна з найбільших фінансових груп у світі. Утворений в 1991 році Hongkong and Shanghai Banking Corporation, що мав штаб-квартири на Далекому Сході, пізніше став засновником є дочірньою структурою Група HSBC. Після утворення банківської групи штаб квартира переїхала у Лондон. 
+       Процес утворення почався після придбання англійського банка Midland. Назва взята з початкових літер банка засновника. Також варто відмітити що домашнім ринком, група рахує як Великобританію так і Гонконг. HSBC налічує близько 7200 офісів у 82 країнах світу. Компанія надає повний комплекс банківських послуг: міжнародний банкінг та фінансові послуги, включаючи роздрібний та корпоративний банкінг, торгівлю цінними паперами, робота на ринках капіталу, інвестиційний банкінг та страхування.
+       HSBC, від Hongkong & Shanghai Banking Corporation Holdings plc — британський банк, найбільший банк Європи, одна з найбільших фінансових груп у світі. Утворений в 1991 році Hongkong and Shanghai Banking Corporation, що мав штаб-квартири на Далекому Сході, пізніше став засновником є дочірньою структурою Група HSBC. Після утворення банківської групи штаб квартира переїхала у Лондон. 
+       Процес утворення почався після придбання англійського банка Midland. Назва взята з початкових літер банка засновника. Також варто відмітити що домашнім ринком, група рахує як Великобританію так і Гонконг. HSBC налічує близько 7200 офісів у 82 країнах світу. Компанія надає повний комплекс банківських послуг: міжнародний банкінг та фінансові послуги, включаючи роздрібний та корпоративний банкінг, торгівлю цінними паперами, робота на ринках капіталу, інвестиційний банкінг та страхування.</p><!--зразок тексту-->
+     </div>
+      <table class="table-border1"><!--таблиця кольорів для тексту-->
+        <tr>
+        <td style="background: yellow;">
+        </td>
+        <td style="background: red;">
+        </td>
+        <td style="background: green;">
+        </td>
+        </tr>
+        <tr>
+        <td style="background: blue;">
+        </td>
+        <td style="background: lightgreen;">
+        </td>
+        <td style="background: orange;">
+        </td>
+        </tr>
+        <tr>
+        <td style="background: purple;">
+        </td>
+        <td style="background: turquoise;">
+        </td>
+        <td style="background: hotpink;">
+        </td>
+        </tr>
+      </table>
+        <div class = "div-table2"><!--блок, де міститься набір кольорів для фону-->
+            <input class = "btn background-images" type="button"  value="Images"><!--кнопка переходу на блок із зображеннями-->
+            <table class="table-border2"><!--інша таблиця кольорів-->
+              <tr>
+              <td style="background: yellow;">
+              </td>
+              <td style="background: red;">
+              </td>
+              <td style="background: green;">
+              </td>
+              </tr>
+              <tr>
+              <td style="background: blue;">
+              </td>
+              <td style="background: lightgreen;">
+              </td>
+              <td style="background: orange;">
+              </td>
+              </tr>
+              <tr>
+              <td style="background: purple;">
+              </td>
+              <td style="background: turquoise;">
+              </td>
+              <td style="background: hotpink;">
+              </td>
+              </tr>
+            </table>
+        </div>
+        <div class = "div-table3"><!--блок із фоновими зображеннями-->
+          <input class = "btn background-colors" type="button"  value="Colors"><!--кнопка переходу на блок із кольорами-->
+          <table class="table-border3"><!--іще інша таблиця кольорів-->
+          <tr>
+          <td style="background-image: url(images/asopen.jpg);"><img src="images/asopen.jpg" alt = "asope">
+          </td>
+          <td style="background-image: url(images/wimb.jpg);"><img src="images/wimb.jpg" alt = "wimb">
+          </td>
+          <td style="background-image: url(images/roland.jpg);"><img src="images/roland.jpg" alt = "roland">
+          </td>
+          </tr>
+          <tr>
+          <td style="background-image: url(images/us.jpg);"><img src="images/us.jpg" alt = "usopen">
+          </td>
+          <td style="background-image: url(images/nov.jpg);"><img src="images/nov.jpg" alt = "novak">
+          </td>
+          <td style="background-image: url(images/fed.jpg);"><img src="images/fed.jpg" alt = "rederer">
+          </td>
+          </tr>
+          <tr>
+          <td style="background-image: url(images/del.jpg);"><img src="images/del.jpg" alt = "del potro">
+          </td>
+          <td style="background-image: url(images/Equador.jpg);"><img src="images/Equador.jpg" alt = "flag">
+          </td>
+          <td style="background-image: url(images/mur.jpg);"><img src="images/mur.jpg" alt = "murray">
+          </td>
+          </tr>
+          </table>
+          <div class = "download">Загрузити файл:
+            <input class = "choice" type="file"><!--кнопка загруження зображень для backgroud-->
+          </div>
+        </div>
+    </div>
+    <div class="edit-window"><!--батьківський блок, де редагується текст і створрюються таблиця і списки-->
+      <div class="edit-window1"><textarea></textarea></div><!--блок, де відображається текст для редагування і поле для тексту-->
+      <div class = "table-elements"><!--блок з елементами створення таблиці-->
+        <form id = "myForm"><!--форма для таблиці-->
+            <label>К-ть рядків:<input class = "btn number-list-tr" type='text' name='tr' value=''/><span class = "s1"><sup><small>невірно</small></sup></span></label><!--форма для введення кількості рядків таблиці-->
+            <label>К-ть стовпців:<input class = "btn number-list-td" type='td' name='td' value=''/><span class = "s2"><sup><small>невірно</small></sup></span></label><br><!--форма для введення кількості стовпців таблиці-->
+            <label>Висота:<input  class = "btn height-list-td" type='text' name='height' value=" "/><span class = "s3"><sup><small>невірно</small></sup></span></label><!--форма для введення висоти таблиці-->
+            <label>Ширина:<input class = "btn width-list-td" type='text' name='tf' value=" "/><span class = "s4"><sup><small>невірно</small></sup></span></label><br><!--форма для введення ширини таблиці-->
+            <label>cellspacing:<input class = "btn cellspacing" type='text' name='tf' value=''/><span class = "s5"><sup><small>невірно</small></sup></span></label><br><!--форма для введення товщини рядка комірки-->
+            <label>Товщина:<input class = "btn type_of_border_tbl" type='text' name='tf' value=''/><span class = "s6"><sup><small>невірно</small></sup></span></label><!--форма для введення товщини рамки таблиці-->
+            <label>Колір:<input class = "btn color-td" type='text' name='tf' value=''/></label><!--форма для введення кольору рамок таблиці-->
+        </form>
+        <label><input class = "btn button-make-tbl" type="button" value="СТВОРИТИ ТАБЛИЦЮ"></label><!--кнопка створити таблицю-->
+        <label><input class = "btn button-push-tbl" type="button" value="СКИНУТИ"></label><!--кнопку обнулення значень, введених для створення таблиці-->
+      </div>
+      <div class = "list-elements"><!--блок з елементами для створення списку-->
+        <label class = "kind_of_list1"> ВИД СПИСКУ:<!--форма для вибору виду списку-->
+          <select class = "btn kind_of_list" name='typeOfList1 btn' >
+            <option value = "" selected>Виберіть тип</option>
+            <option class = "ol2" value = "ol">Нумерований</option><!--нумерований список-->
+            <option class = "ul2" value = "ul">Маркований</option><!--маркваний список-->
+          </select><br>
+        </label>
+        <div class = "marker2"><label>МАРКЕР:<!--форма для вибору типу маркера маркованого списку-->
+            <select class = "marker2a btn" name='type-of-mark11'>
+              <option value = "" selected>Виберіть тип</option>
+              <option value = "disk">disk</option>
+              <option value = "circle">circle</option>
+              <option value = "square">square</option>
+            </select>
+          </label><br>
+        </div>
+        <div class = "marker1">
+            <label> МАРКЕР:<!--форма для вибору типу маркера нумерованого списку-->
+              <select class = "btn marker1a" name='type-of-mark12'>
+                <option value = "" selected>Виберіть тип</option>
+                <option value = "armenian">armenian</option>
+                <option value = "decimal">decimal</option>
+                <option value = "decimal-leading-zero">decimal-leading-zero</option>
+                <option value = "georgian">georgian</option>
+                <option value = "lower-roman">lower-roman</option>
+              </select>
+            </label><br>
+        </div>
+       <div class = "parts">
+         <form id = "myForm1">   
+            <label class = "parts-of-list11">К-ть елементів:<!--форма для введення кількості елементів списку-->
+              <input type='text' class = "parts-of-list btn" name='ul-li-number' value=''/><span class = "s7"><sup><small>невірно</small></sup></span>
+            </label><br>
+         </form>
+         <label><input class = "button-make-list btn" type="button" value="СТВОРИТИ"></label><!--кнопка створити список-->
+          <label><input class = "button-push-list btn" type="button" value="СКИНУТИ"></label><!--кнопка обнулення спискових елементів-->
+       </div>
+    </div>
+    <script src = "JavaScript/main1.js"></script><!--ссилка на файл із JavaScript-->
+  </body>
+</html>

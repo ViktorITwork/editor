@@ -1,0 +1,280 @@
+/*стилізація видимої панелі інструментів*/
+.panel1 {
+	margin: auto;
+	text-align: center;
+	height: 60px;
+}
+/*стилізація невидимої панелі інструментів*/
+.panel2 {
+	margin: auto;
+	text-align: center;
+	height: 60px;
+	display: none;
+}
+/*головний блок, який є одразу видимий*/
+.main-window {
+	margin: auto;
+	border: 1px solid black;
+	height: 560px;
+	position: relative;
+	padding: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*дочірний блок головного, в якому відображається текст*/
+.main-window1 {
+  max-height: 95%;
+  overflow: auto;
+  background-size: 100%;
+  padding: 8px;
+}
+/*невидимий блок, в якому містяться елементи для створення списку і таблиці, а також редагування тексту*/
+.edit-window {
+  margin: auto;
+  border: 2px solid black;
+  height: 530px;
+  position: relative;
+  padding: 5px;
+  display: none;
+}
+/*дочірний блок вищенаведеного блоку*/
+.edit-window1 {
+  max-height: 100%;
+  overflow: auto;
+  padding: 8px;
+  background-size: 100%;
+}
+/*блок textarea*/
+textarea {
+    height: 480px;/*висота*/
+    width: 98%; /*ширина*/
+    resize: none;/*щоб не розтягувалось*/
+}
+/*кнопка для переходу на зображення для фону*/
+.background-images {
+  height: 20px;
+  width: 85px;
+  margin-left: 14px;
+  background: orange;
+  border-radius: 8px;
+}
+/*стилізація кнопки для переходу на кольору для фону*/
+.background-colors {
+  height: 20px;
+  width: 85px;
+  margin-bottom: 5px;
+  margin-left: 60px;
+  background: orange;
+  border-radius: 8px;
+}
+/*стилізаця таблиці із кольорами для тексту*/
+.table-border1 {
+    position: absolute;
+    top: 40%;/* висота */
+    left: 40%;/* відступ зліва */
+    bottom: 40%;/* відступ знизу*/
+    right: 40%;
+    height: 100px; /*висота*/
+    width: 100px;  /*ширина*/
+    border:1px solid black;/*товщина і колір таблиці*/
+    display: none;/*невидимість для дисплея*/
+    z-index: 1000;/* позиціювання зовні*/
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*стилізація блоку із кольорами для фону*/
+.div-table2 {
+    position: absolute;
+    top: 40%;/* висота */
+    left: 40%;/* відступ зліва */
+    bottom: 40%;/* відступ знизу*/
+    right: 40%;
+    height: 120px; /*висота*/
+    width: 110px;
+    border:2px solid grey;/*товщина і колір таблиці*/
+    display: none;/*невидимість для дисплея*/
+    z-index: 1000;/* позиціювання зовні*/
+    background: grey;
+    border-radius: 5px;
+}
+/*стилізація блоку із фоновими зображеннями*/
+.div-table3 {
+    position: absolute;
+    top: 40%;/* висота */
+    left: 40%;/* відступ зліва */
+    bottom: 40%;/* відступ знизу*/
+    right: 40%;
+    height: 210px; /*висота*/
+    width: 210px;
+    border:2px solid grey;/*товщина і колір таблиці*/
+    display: none;/*невидимість для дисплея*/
+    z-index: 1000;/* позиціювання зовні*/
+    background: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*таблиця із зразками фонових зображень*/
+.table-border3 {
+margin: auto;
+bottom: 10px;
+top: 8px;
+border: 3px solid red;
+height: 140px;
+width: 180px;
+}
+/*стилізація комірок таблиць, які містяться у блоці*/
+td { height: 27px; width: 30px; border: 1px solid black;
+}
+/*стилізація зображень*/
+img {height: 100%; width: 100%;}
+
+/*.background-table {
+    height: 300px;
+    width: 300px; 
+    border:1px solid black;
+    display: none;
+    margin: auto;
+    position: absolute;
+}*/
+/*форма завантаження файлу для фону*/
+.choice {
+top: 5px;}
+/*блок, де міститься вищенаедена форма*/
+.download {
+text-decoration: underline;
+text-align: center;
+margin-top: 10px;}
+
+/*невидимий блок з елементами таблиці*/
+.table-elements {
+  height: 255px;
+  width: 378px;
+  border-radius: 10px;
+  border: 3px solid grey;
+  padding: 3px;
+  position: absolute;
+  display: none;
+  top: 40%;/* висота */
+  left: 40%;/* відступ зліва */
+  bottom: 40%;/* відступ знизу*/
+  right: 40%;
+  display: none;/*невидимість для дисплея*/
+  z-index: 1000;/* позиціювання зовні*/
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/*блоки, які з"являються при неправильному заповненні певних форм*/
+.s1, .s2, .s3, .s4, .s5, .s6, .s7 {
+    margin: auto;
+    text-transform: lowercase;
+    color: red;
+    display: none;
+
+}
+
+.number-list-tr, .number-list-td, .border-width  {
+  width: 60px;
+  margin: 10px;
+  margin-left: 1px;
+}
+
+.color-td {
+  width: 60px;
+  margin: 10px;
+  margin-left: 55px;
+}
+.type_of_border_tbl {
+  width: 60px;
+  margin: 10px;
+  margin-left: 18px;
+}
+
+.height-list-td {
+  width: 60px;
+  margin: 10px;
+  margin-left: 30px;
+}
+.width-list-td {
+  width: 60px;
+  margin: 10px;
+  margin-left: 37px;
+}
+.cellspacing {
+  width: 60px;
+  margin: 10px;
+  margin-left: 7px;
+}
+
+/*кнопка створення і обнулення таблиці*/
+.button-make-tbl, .button-push-tbl {
+  margin: 20px 30px 0px 30px;
+  border-radius: 5px;
+}
+/*стилізація блоку, який містить елементи списку*/
+ .list-elements {
+  height: 160px;
+  width: 240px;
+  border-radius: 10px;
+  border: 3px solid grey;
+  padding: 20px;
+  position: absolute;
+  top: 40%;/* висота */
+  left: 40%;/* відступ зліва */
+  bottom: 40%;/* відступ знизу*/
+  right: 40%;
+  z-index: 1000;/* позиціювання зовні*/
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: none;
+ }
+/*форма вибору списку*/
+ .kind_of_list {
+  border-radius: 5px;
+  margin-bottom: 12px;
+  width: 120px;
+ }
+ /*маркований список*/
+ .marker2a {
+  border-radius: 5px;
+  margin-left: 37px;
+  margin-bottom: 12px;
+  width: 120px;
+ }
+ /*нумерований список*/
+.marker1a {
+  border-radius: 5px;
+  margin-left: 37px;
+  margin-bottom: 12px;
+  width: 120px;
+ }
+ /*кількість елементів списку*/
+ .parts-of-list {
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 80px;
+    margin: 10px;
+ }
+ /*кнопки створення і обнулення списку*/
+ .button-make-list, .button-push-list {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 22px;
+ }
+ /*стилізація кнопок з панелів інструментів*/
+.edit, .bold, .cursive, .underline, .text-size, .text-style1, .color-text, .background, .save, .create-table, .create-list, .button-make-tbl, .button-push-tbl {
+  background: lightgreen;
+  border-radius: 10px;
+  height: 25px;
+}
+.parts {/*елемент, де вводиться кількість рядків списку */
+    display: none;/* невидимість */
+}
+.marker1, .marker2 {/* елементи, де вибирають вид списку */
+    display: none;/* невидимість */
+}
+/*атрибут для надання кольору елементу при наведенні курсора на нього*/
+.btn:hover {
+  background-color: lightblue;
+}
